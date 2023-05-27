@@ -1,4 +1,4 @@
-### Hi there 👋
+### SEG3135 Project
 
 <!--
 **MariaKhalil999/MariaKhalil999** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.

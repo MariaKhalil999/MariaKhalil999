@@ -25,7 +25,7 @@ header{
 }
 
 .logo{
-    cursor:pointer;
+    /* cursor:pointer; */
     margin-bottom: 2%;
 }
 
@@ -98,12 +98,12 @@ header{
     cursor: pointer;
     transition: all 0.3s ease 0s;
     /* margin-bottom: 25%; */
-    margin-bottom: 5px;
-    margin-left: 15px;
+    margin-bottom: 100px;
+    margin-left: 5vw;
 }
 
 .hero-button:hover {
-    background-color: rgba(72, 166, 242, 0.8);
+    background-color: #48a6f2cc;
 }
 
 
@@ -129,20 +129,89 @@ h1{
     max-width: 800px;
     margin-top: 100px;
     margin-bottom: 25px;
-    margin-left: 15px;
+    margin-left: 5vw;
     text-transform: uppercase;
 }
 h5{
     font-size: 28px;
     color:white;
-    position: fixed;
-    top: 700px;
-    bottom: 600px;
-    left: 1050px;
+    /* position: fixed; */
+    position: relative;
+    /* top: 1vw; */
+    bottom: 5vw;
+    left: 70vw;
     max-width: 400px;
     text-align: right;
     text-transform: uppercase;
 }
+
+.who-we-are-img{
+    position: relative;
+    top: 5vw;
+}
+
+.who-we-are-txt{
+    font-family: "Saira", sans-serif;
+    font-weight: 500;
+    font-size: 2vw;
+    bottom: 4vw;
+    position: relative;
+    right: 28vw;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+}
+.who-we-are-txt::before{
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 1px;
+    bottom: 0;
+    left: 0%;
+    border-bottom: 2px solid #48a6f2cc;
+}
+
+.image-container{
+    display: flex;
+    justify-content: center;
+}
+
+.services-section{
+    background-color: #e1e0e0;
+    padding: 15vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.our-detailing-services{
+    font-family: "Saira", sans-serif;
+    font-weight: 550;
+    font-size: 2.5vw;
+    bottom: 5vw;
+    position: relative;
+    text-align: center;
+    
+    text-transform: uppercase;
+    padding-bottom: 5px;
+}
+.our-detailing-services::before{
+    content: "";
+    position: absolute;
+    width: 35%;
+    height: 1px;
+    bottom: 0;
+    left: 0%;
+    border-bottom: 2px solid #48a6f2cc;
+}
+
+.image-container img{
+    width: 20vw;
+    height:auto;
+    margin: 0 5vw;
+    
+}
+
 
 /* .hero-image{
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/home_title.jpg");

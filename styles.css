@@ -327,9 +327,13 @@ h5{
     font-size: 1vw;
     padding: 20px;
     border-radius: 16px;
-    background-color: #48a6f2cc;
+    /* background-color: #48a6f2cc; */
     background: linear-gradient(50%,50%);
     border-radius: 25px 25px 0px 0px;
+    height: 400px; /* Adjust the height as needed */
+    background-color: #48a6f2cc; /* Blue color for the top section */
+    background-image: linear-gradient(to bottom, #48a6f2cc 40%, #d0cfcf 0%); /* Gradient from 20% to bottom with gray color */
+    background-repeat: no-repeat;
 }
 .tier-orange{
     width: 25%;
@@ -338,9 +342,14 @@ h5{
     font-size: 1vw;
     padding: 20px;
     border-radius: 16px;
-    background-color: #FC8955;
+    /* background-color: #FC8955; */
     background: linear-gradient(50%,50%);
     border-radius: 25px 25px 0px 0px;
+    height: 400px; /* Adjust the height as needed */
+    background-color: #FC8955; /* Blue color for the top section */
+    background-image: linear-gradient(to bottom, #FC8955 40%, #d0cfcf 0%); /* Gradient from 20% to bottom with gray color */
+    background-repeat: no-repeat;
+
 }
 
 .services-tiers{
@@ -354,6 +363,8 @@ h5{
     align-content: space-between;
   }
 
+
+
 .services h2{
     display: flex;
     flex-flow: column wrap;
@@ -366,8 +377,33 @@ h5{
 }
 
 .tier-name{
-    font-size: 2.2vw;
+    font-size: 2vw;
     color: white;
+    font-family: "Poppins";
+    font-weight: 500;
+}
+
+.tier-description{
+    color: #585A5B;
+    font-family: "Poppins";
+    margin-top: 2vw;
+    line-height: 1.8;
+    font-size: 1vw;
+}
+
+.starting-from{
+    color: white;
+    font-weight: 500;
+    margin-top: 4%;
+    line-height: 1;
+}
+
+.prices{
+    font-size: 2.8vw;
+    font-family: "Poppins";
+    font-weight: 600;
+    color: white;
+    margin-bottom: 0%;
 }
 
 /* 

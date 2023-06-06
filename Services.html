@@ -1,24 +1,35 @@
 <!DOCTYPE html>
-
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Keithson Auto Detailing</title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keithson Auto Detailing</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
 
     <body>
         <header>
             <img class="logo" src="images/logo.png" width="150vw" height = "65vw" alt="logo">
-            <nav class="navbar">
-                <ul class="nav__links">
+            <nav>
+                <ul class="menu">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="Our Team.html">Our Team</a></li>
-                    <li><a href="Services.html">Services/Packages</a></li>
-                    <li><a href="#">Testimonials</a></li>
-                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="team.html">Our Team</a></li>
+                    <li><a href="services.html">Services/Packages</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
-            </nav>
-            <a class="cta" href="#"><button class="top-right">Book a Cleaning</button></a>
+                <div class="dropdown-menu">
+                  <select onchange="location = this.value;">
+                    <option value="index.html">Home</option>
+                    <option value="Our Team.html">Our Team</option>
+                    <option value="Services.html">Services/Packages</option>
+                    <option value="testimonials.html">Testimonials</option>
+                    <option value="contact.html">Contact</option>
+                  </select>
+                </div>
+              </nav>
+            <a class="cta" href="book1.html"><button class="top-right">Book a Cleaning</button></a>
         </header>
 
         
@@ -33,22 +44,112 @@
           
         <h3 class = "our-detailing-services"> Our Packages</h3>
         <div class="services-tiers">
-            <div class="services-row1">
+            <div class="services-row1" >
                 <div class="tier-blue">
                     <h2 class="tier-name">Exterior Package</h2>
                     <p class="starting-from">Starting from</p>
                     <h2 class="prices">$80</h2>
-                    <p class="tier-description">Exterior Windows & Mirrors<br>Rims Cleaned & Shined<br>Professional Hand Wash</p>
+                    <h4 class="times">60 min</h4>
+                    <p class="tier-description"> <strong>Exterior Windows & Mirrors</strong><br><strong>Rims Cleaned & Shined</strong><br><strong>Professional Hand Wash </strong>to remove mud and dirt<br>   
+                        <strong>Tire Scrub & Shine</strong><br><strong>Door Jambs Cleaned</strong></p>
                 </div>
 
                 <div class="tier-orange">
                     <h2 class="tier-name">Interior Package</h2>
-                    <p class="tier-description">desc</p>
+                    <p class="starting-from">Starting from</p>
+                    <h2 class="prices">$95</h2>
+                    <h4 class="times">100 min</h4>
+                    <p class="tier-description"><strong>Carpets & Upholstery Shampoo</strong><br><strong>Complete Interior Vacuum</strong> for carpets, mats, & seats<br><strong>Leather Conditioner Treatment</strong><br><strong>Spot treatment</strong> to remove stains<br><strong>Interior Clean by Steam</strong><br><strong>Interior polish</strong> for plastics and vinyl</p>
                 </div>
     
                 <div class="tier-blue">
                     <h2 class="tier-name">Full Service Package</h2>
-                    <p class="tier-description">desc</p>
+                    <p class="starting-from">Starting from</p>
+                    <h2 class="prices">$220</h2>
+                    <h4 class="times">230 min</h4>
+                    <p class="tier-description"><strong><span style="color: rgb(13, 13, 13);">EVERYTHING</span> from Interior + Exterior packages, plus<br>Vent Sanitation</strong> to get rid of harmful bacteria<br><strong>Ceramic Spray Wax<br>Hand Clay Bar Process</strong> smooths exterior paint<br><strong>Odor Elimination <br>Crevices Detailing <br>Salt & Calcium Removal<br>Steam All Surfaces</strong> rids your car of bacteria<br><strong>Engine Bay Cleaning</strong></p>
                 </div>
             </div>
+
+            
+            <div class="section-add-on">
+                <h3 class = "add-on-services"> Add-On Services</h3>
+                <h6 class="can-be-selected">(Can be selected in the booking process)</h6>
+                <div class="section-row1">
+                    <div class="team1">
+                        <img class="interior-image" src="images/interior.jpg" alt="Interior Cleaning">
+                        <h2 class="service-name">Pet Hair Removal</h2>
+                        <p class="description">desc</p>
+                        <p class="time-cost"> <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" class="bi bi-stopwatch" viewBox="0 0 16 16">
+                            <path d="M8.5 5.6a.5.5 0 1 0-1 0v2.9h-3a.5.5 0 0 0 0 1H8a.5.5 0 0 0 .5-.5V5.6z"/>
+                            <path d="M6.5 1A.5.5 0 0 1 7 .5h2a.5.5 0 0 1 0 1v.57c1.36.196 2.594.78 3.584 1.64a.715.715 0 0 1 .012-.013l.354-.354-.354-.353a.5.5 0 0 1 .707-.708l1.414 1.415a.5.5 0 1 1-.707.707l-.353-.354-.354.354a.512.512 0 0 1-.013.012A7 7 0 1 1 7 2.071V1.5a.5.5 0 0 1-.5-.5zM8 3a6 6 0 1 0 .001 12A6 6 0 0 0 8 3z"/>
+                          </svg>45 mins <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" class="bi bi-currency-dollar" viewBox="0 0 13 14">
+                            <path d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718H4zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73l.348.086z"/>
+                          </svg>30</p>
+                        <!-- <img class="time-icon" src="images/carlogo.jpg" width="20px" height="auto">  -->
+                    </div>
+    
+                    <div class="team2">
+                        <img class="exterior-image" src="images/exterior.jpg" alt="Exterior Cleaning">
+                        <h2 class="service-name">Paint Correction (2-Step)</h2>
+                        <p class="description">desc</p>
+                        <p class="time-cost"> <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" class="bi bi-stopwatch" viewBox="0 0 16 16">
+                            <path d="M8.5 5.6a.5.5 0 1 0-1 0v2.9h-3a.5.5 0 0 0 0 1H8a.5.5 0 0 0 .5-.5V5.6z"/>
+                            <path d="M6.5 1A.5.5 0 0 1 7 .5h2a.5.5 0 0 1 0 1v.57c1.36.196 2.594.78 3.584 1.64a.715.715 0 0 1 .012-.013l.354-.354-.354-.353a.5.5 0 0 1 .707-.708l1.414 1.415a.5.5 0 1 1-.707.707l-.353-.354-.354.354a.512.512 0 0 1-.013.012A7 7 0 1 1 7 2.071V1.5a.5.5 0 0 1-.5-.5zM8 3a6 6 0 1 0 .001 12A6 6 0 0 0 8 3z"/>
+                          </svg>6h <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" class="bi bi-currency-dollar" viewBox="0 0 13 14">
+                            <path d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718H4zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73l.348.086z"/>
+                          </svg>450</p>
+                    </div>
+        
+                    <div class="team3">
+                        <img class="specialty-image" src="images/specialty.jpg" alt="Specialty Services">
+                        <h2 class="service-name">Ceramic Coating</h2>
+                        <p class="description">desc</p>
+                        <p class="time-cost"> <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" class="bi bi-stopwatch" viewBox="0 0 16 16">
+                            <path d="M8.5 5.6a.5.5 0 1 0-1 0v2.9h-3a.5.5 0 0 0 0 1H8a.5.5 0 0 0 .5-.5V5.6z"/>
+                            <path d="M6.5 1A.5.5 0 0 1 7 .5h2a.5.5 0 0 1 0 1v.57c1.36.196 2.594.78 3.584 1.64a.715.715 0 0 1 .012-.013l.354-.354-.354-.353a.5.5 0 0 1 .707-.708l1.414 1.415a.5.5 0 1 1-.707.707l-.353-.354-.354.354a.512.512 0 0 1-.013.012A7 7 0 1 1 7 2.071V1.5a.5.5 0 0 1-.5-.5zM8 3a6 6 0 1 0 .001 12A6 6 0 0 0 8 3z"/>
+                          </svg>7.5h  <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" class="bi bi-currency-dollar" viewBox="0 0 13 14">
+                            <path d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718H4zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73l.348.086z"/>
+                          </svg>600</p>
+                    </div>
+                </div>
+                <div class="section-row1">
+                    <div class="team1">
+                        <img class="interior-image" src="images/interior.jpg" alt="Interior Cleaning">
+                        <h2 class="service-name">Headlight Restoration</h2>
+                        <p class="description">desc</p>
+                        <p class="time-cost"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" class="bi bi-stopwatch" viewBox="0 0 16 16">
+                            <path d="M8.5 5.6a.5.5 0 1 0-1 0v2.9h-3a.5.5 0 0 0 0 1H8a.5.5 0 0 0 .5-.5V5.6z"/>
+                            <path d="M6.5 1A.5.5 0 0 1 7 .5h2a.5.5 0 0 1 0 1v.57c1.36.196 2.594.78 3.584 1.64a.715.715 0 0 1 .012-.013l.354-.354-.354-.353a.5.5 0 0 1 .707-.708l1.414 1.415a.5.5 0 1 1-.707.707l-.353-.354-.354.354a.512.512 0 0 1-.013.012A7 7 0 1 1 7 2.071V1.5a.5.5 0 0 1-.5-.5zM8 3a6 6 0 1 0 .001 12A6 6 0 0 0 8 3z"/>
+                          </svg>60 mins  <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" class="bi bi-currency-dollar" viewBox="0 0 13 14">
+                            <path d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718H4zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73l.348.086z"/>
+                          </svg>70</p>
+                    </div>
+    
+                    <div class="team2">
+                        <img class="exterior-image" src="images/exterior.jpg" alt="Exterior Cleaning">
+                        <h2 class="service-name">Dent Repair</h2>
+                        <p class="description">desc</p>
+                        <p class="time-cost"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" class="bi bi-stopwatch" viewBox="0 0 16 16">
+                            <path d="M8.5 5.6a.5.5 0 1 0-1 0v2.9h-3a.5.5 0 0 0 0 1H8a.5.5 0 0 0 .5-.5V5.6z"/>
+                            <path d="M6.5 1A.5.5 0 0 1 7 .5h2a.5.5 0 0 1 0 1v.57c1.36.196 2.594.78 3.584 1.64a.715.715 0 0 1 .012-.013l.354-.354-.354-.353a.5.5 0 0 1 .707-.708l1.414 1.415a.5.5 0 1 1-.707.707l-.353-.354-.354.354a.512.512 0 0 1-.013.012A7 7 0 1 1 7 2.071V1.5a.5.5 0 0 1-.5-.5zM8 3a6 6 0 1 0 .001 12A6 6 0 0 0 8 3z"/>
+                          </svg>60 mins  <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" class="bi bi-currency-dollar" viewBox="0 0 13 14">
+                            <path d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718H4zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73l.348.086z"/>
+                          </svg>65</p>
+                    </div>
+        
+                    <div class="team3">
+                        <img class="specialty-image" src="images/specialty.jpg" alt="Specialty Services">
+                        <h2 class="service-name">Spray Wax Shine</h2>
+                        <p class="description">desc</p>
+                        <p class="time-cost"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" class="bi bi-stopwatch" viewBox="0 0 16 16">
+                            <path d="M8.5 5.6a.5.5 0 1 0-1 0v2.9h-3a.5.5 0 0 0 0 1H8a.5.5 0 0 0 .5-.5V5.6z"/>
+                            <path d="M6.5 1A.5.5 0 0 1 7 .5h2a.5.5 0 0 1 0 1v.57c1.36.196 2.594.78 3.584 1.64a.715.715 0 0 1 .012-.013l.354-.354-.354-.353a.5.5 0 0 1 .707-.708l1.414 1.415a.5.5 0 1 1-.707.707l-.353-.354-.354.354a.512.512 0 0 1-.013.012A7 7 0 1 1 7 2.071V1.5a.5.5 0 0 1-.5-.5zM8 3a6 6 0 1 0 .001 12A6 6 0 0 0 8 3z"/>
+                          </svg>30 mins  <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" class="bi bi-currency-dollar" viewBox="0 0 13 14">
+                            <path d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718H4zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73l.348.086z"/>
+                          </svg>25</p>
+                    </div>
+                </div>
+            </div>
+
         </div>

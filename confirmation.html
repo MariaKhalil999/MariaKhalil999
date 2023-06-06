@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keithson Auto Detailing</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel=”stylesheet” href=”https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css”rel=”nofollow” integrity=”sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm” crossorigin=”anonymous”>
+</head>
+
+
+    <body>
+        <header>
+            <img class="logo" src="images/logo.png" width="150vw" height = "65vw" alt="logo">
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="team.html">Our Team</a></li>
+                    <li><a href="services.html">Services/Packages</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="dropdown-menu">
+                  <select onchange="location = this.value;">
+                    <option value="index.html">Home</option>
+                    <option value="team.html">Our Team</option>
+                    <option value="services.html">Services/Packages</option>
+                    <option value="testimonials.html">Testimonials</option>
+                    <option value="contact.html">Contact</option>
+                  </select>
+                </div>
+              </nav>
+            <a class="cta" href="book1.html"><button class="top-right">Book a Cleaning</button></a>
+        </header>
+
+        <h3 class = "confirmation-thanks">Thank you for booking with us!</h3>
+        <div class="confirm-rectangle">
+            <h4 class="confirmation">Confirmation</h4>
+            <p class="confirmation-txt">Your appointment has been processed.<br>A confirmation email containing your booking details will be sent to your email address soon.</p>
+        </div>
+        <h3 class = "booking-details">Booking Details</h3>
+        <table class="table">
+            <thead>
+              <tr>
+                <th>Category</th>
+                <th>Column</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Booking ID:</td>
+                <td><div id="book-id"></div></td>
+              </tr>
+              <tr>
+                <td>Date:</td>
+                <td><span id="date"></span></td>
+              </tr>
+              <tr>
+                <td>Time:</td>
+                <td><span id="time"></span></td>
+              </tr>
+              <tr>
+                <td>Chosen Technician:</td>
+                <td><span id="techName"></span></td>
+              </tr>
+              <tr>
+                <td>Chosen Service Package:</td>
+                <td><span id="tierSaved"></span></td>
+              </tr>
+              <tr>
+                <td>Add-ons (optional):</td>
+                <td><div id="add-ons"></div></td>
+              </tr>
+            </tbody>
+          </table>
+          
+
+          <script>
+
+            let x = Math.floor(Math.random()*10000 + 10000);
+            document.getElementById("book-id").innerHTML = x;
+
+            const tierSaved = localStorage.getItem('variableName');
+            document.getElementById('tierSaved').textContent = tierSaved;
+            
+            const selectedTech = localStorage.getItem('techName');
+            document.getElementById('techName').textContent = selectedTech;
+
+            const selectedDate = localStorage.getItem('date');
+            const dateObj = new Date(selectedDate);
+            //adjusting time zone offset
+            const timeZoneOffset = dateObj.getTimezoneOffset();
+            dateObj.setMinutes(dateObj.getMinutes() + timeZoneOffset);
+            const options = { month: 'long', day: 'numeric', year: 'numeric' };
+            const formattedDate = dateObj.toLocaleDateString('en-US', options);
+            document.getElementById('date').textContent = formattedDate;
+
+
+            const selectedTime= localStorage.getItem('time');
+            document.getElementById('time').textContent = selectedTime;
+
+            const selectedOptionsString= localStorage.getItem('add-ons');
+            document.getElementById('add-ons').textContent = selectedOptionsString;
+
+          </script>
+          

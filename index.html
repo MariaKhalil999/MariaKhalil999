@@ -1,24 +1,42 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keithson Auto Detailing</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
 
-    <head>
+
+    <!-- <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Keithson Auto Detailing</title>
         <link rel="stylesheet" href="styles.css">
-    </head>
+    </head> -->
 
     <body>
         <header>
             <img class="logo" src="images/logo.png" width="150vw" height = "65vw" alt="logo">
-            <nav class="navbar">
-                <ul class="nav__links">
+            <nav>
+                <ul class="menu">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="Our Team.html">Our Team</a></li>
-                    <li><a href="Services.html">Services/Packages</a></li>
-                    <li><a href="#">Testimonials</a></li>
-                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="team.html">Our Team</a></li>
+                    <li><a href="services.html">Services/Packages</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
-            </nav>
-            <a class="cta" href="#"><button class="top-right">Book a Cleaning</button></a>
+                <div class="dropdown-menu">
+                  <select onchange="location = this.value;">
+                    <option value="index.html">Home</option>
+                    <option value="team.html">Our Team</option>
+                    <option value="services.html">Services/Packages</option>
+                    <option value="testimonials.html">Testimonials</option>
+                    <option value="contact">Contact</option>
+                  </select>
+                </div>
+              </nav>
+            <a class="cta" href="book1.html"><button class="top-right">Book a Cleaning</button></a>
         </header>
 
         
@@ -32,7 +50,7 @@
           </div>
 
         <header>
-            <img class="who-we-are-img" src="images/car_scrub.jpg" width="450vw" height = "400vw" alt="who-we-are-img">
+            <img class="who-we-are-img" src="images/car_scrub.jpg" width="450vw" height = "400vw" alt="Who We Are">
             <h3 class = "who-we-are-txt">Who we are</h3>
             
         </header>
@@ -40,28 +58,114 @@
             <h3 class = "our-detailing-services"> Our Detailing Services</h3>
             <div class="section-row1">
                 <div class="team1">
-                    <img class="interior-image" src="images/interior.jpg">
+                    <img class="interior-image" src="images/interior.jpg" alt="Interior Cleaning">
                     <h2 class="service-name">Interior Cleaning</h2>
                     <p class="description">desc</p>
                 </div>
 
                 <div class="team2">
-                    <img class="exterior-image" src="images/exterior.jpg">
+                    <img class="exterior-image" src="images/exterior.jpg" alt="Exterior Cleaning">
                     <h2 class="service-name">Exterior Cleaning</h2>
                     <p class="description">desc</p>
                 </div>
     
                 <div class="team3">
-                    <img class="specialty-image" src="images/specialty.jpg">
+                    <img class="specialty-image" src="images/specialty.jpg" alt="Specialty Services">
                     <h2 class="service-name">Specialty Services</h2>
                     <p class="description">desc</p>
                 </div>
             </div>
         </div>
-        
 
+        <div class="container">                      
+            <div class="row text-center justify-content-center mb-5">
+                <div class="col-xl-6 col-lg-8">
+                    <h2 class="how-it-works">How it Works</h2>
+                    <p class="how-it-works-desc">Learn how our team offers a hassle-free experience and what to expect during your appointment,<br> from drop-off to a sparkling end result.</p>
+                    <!-- <p class="how-it-works-desc">We’re very proud of the path we’ve taken. Explore the history that made us the company we are today.</p> -->
+                </div>
+            </div>
         
+            <div class="row">
+                <div class="col">
+                    <div class="timeline-steps aos-init aos-animate" data-aos="fade-up">
+                        <div class="timeline-step">
+                            <div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top" title="" data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="2003">
+                                <div class="inner-circle"></div>
+                                <p class="timeline-name">1. Pick Service</p>
+                                <p class="timeline-desc">Pick your desired package, add-on services, and technician</p>
+                            </div>
+                        </div>
+                        <div class="timeline-step">
+                            <div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top" title="" data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="2004">
+                                <div class="inner-circle"></div>
+                                <p class="timeline-name">2. Enter Info</p>
+                                <p class="timeline-desc">Enter your contact info and your preferred date and time</p>
+                            </div>
+                        </div>
+                        <div class="timeline-step">
+                            <div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top" title="" data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="2005">
+                                <div class="inner-circle"></div>
+                                <p class="timeline-name">3. Inspection</p>
+                                <p class="timeline-desc">Get your car's exterior and interior meticulously inspected</p>
+                            </div>
+                        </div>
+                        <div class="timeline-step">
+                            <div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top" title="" data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="2010">
+                                <div class="inner-circle"></div>
+                                <p class="timeline-name">4. Cleaning</p>
+                                <p class="timeline-desc">Sit back and relax as our expert technicians service your car</p>
+                            </div>
+                        </div>
+                        <div class="timeline-step mb-0">
+                            <div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top" title="" data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="2020">
+                                <div class="inner-circle"></div>
+                                <p class="timeline-name">5. Completion</p>
+                                <p class="timeline-desc">Recieve your car with a new shiny, refreshed look</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <footer>
+            <div class="footer-content">
+              <div class="logo-area">
+                <img class="footer-logo" src="images/footer-logo.png" width="150vw" height = "65vw" alt="logo">
+              </div>
+              <div class="location-info">
+                <h3>Location</h3>
+                <p>Keithson Car Detailing</p>
+                <p>75 Laurier Ave</p>
+                <p>Ottawa, ON</p>
+                <p>K1N6N5</p>
+              </div>
+              <div class="contact-info">
+                <h3>Get in Touch</h3>
+                <p>info@keithsoncardetailing.ca</p>
+                <p>(613) 111-1111</p>
+              </div>
+              <div class="opening-hours">
+                <h3>Opening Hours</h3>
+                <p>Monday-Friday: 9am-5pm</p>
+                <p>Saturday: 10am-2pm</p>
+                <p>Sunday: Closed</p>
+              </div>
+                <div class="social-media">
+                    <img src="images/instagram_icon.png" alt="Instagram Link"  >
+                    <img src="images/twitter-icon.png" alt="Twitter Link"  >
+                    <img src="images/facebook_logo.png" alt="Facebook Link">
+                </div>
+            </div>
+          </footer>
             
+        <script src=”https://code.jquery.com/jquery-3.2.1.slim.min.js” integrity=”sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN” crossorigin=”anonymous”></script>
 
+        <script src=https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js integrity=”sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q” crossorigin=”anonymous”></script>
+
+        <script src=”https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js” integrity=”sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl” crossorigin=”anonymous”></script>
     </body>
 </html>

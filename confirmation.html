@@ -44,7 +44,7 @@
             <thead>
               <tr>
                 <th>Category</th>
-                <th>Column</th>
+                <th>Information</th>
               </tr>
             </thead>
             <tbody>
@@ -72,6 +72,14 @@
                 <td>Add-ons (optional):</td>
                 <td><div id="add-ons"></div></td>
               </tr>
+              <tr>
+                <td>Customer Name:</td>
+                <td><div id="firstName"></div> <div id="lastName"></div></td>
+              </tr>
+              <tr>
+                <td>Customer Email:</td>
+                <td><div id="email"></div></td>
+              </tr>
             </tbody>
           </table>
           
@@ -83,6 +91,15 @@
 
             const tierSaved = localStorage.getItem('variableName');
             document.getElementById('tierSaved').textContent = tierSaved;
+
+            const firstName = localStorage.getItem('firstName');
+            document.getElementById('firstName').textContent = firstName;
+
+            const lastName = localStorage.getItem('lastName');
+            document.getElementById('lastName').textContent = lastName;
+
+            const email = localStorage.getItem('email');
+            document.getElementById('email').textContent = email;
             
             const selectedTech = localStorage.getItem('techName');
             document.getElementById('techName').textContent = selectedTech;
@@ -104,4 +121,35 @@
             document.getElementById('add-ons').textContent = selectedOptionsString;
 
           </script>
-          
+    <footer>
+      <div class="footer-content">
+        <div class="logo-area">
+          <img class="footer-logo" src="images/footer-logo.png" width="150vw" height = "65vw" alt="logo">
+        </div>
+        <div class="location-info">
+          <h3>Location</h3>
+          <p>Keithson Car Detailing</p>
+          <p>75 Laurier Ave</p>
+          <p>Ottawa, ON</p>
+          <p>K1N6N5</p>
+        </div>
+        <div class="contact-info">
+          <h3>Get in Touch</h3>
+          <p>info@keithsoncardetailing.ca</p>
+          <p>(613) 111-1111</p>
+        </div>
+        <div class="opening-hours">
+          <h3>Opening Hours</h3>
+          <p>Monday-Friday: 9am-5pm</p>
+          <p>Saturday: 10am-2pm</p>
+          <p>Sunday: Closed</p>
+        </div>
+          <div class="social-media">
+              <img src="images/instagram_icon.png" alt="Instagram Link"  >
+              <img src="images/twitter-icon.png" alt="Twitter Link"  >
+              <img src="images/facebook_logo.png" alt="Facebook Link">
+          </div>
+      </div>
+    </footer>      
+  </body>
+</html>

@@ -217,33 +217,82 @@ h5{
     text-transform: uppercase;
 }
 
-.who-we-are-img{
-    position: relative;
-    height: auto;
-    top: 5vw;
-    right: 5vw;
+.who-we-are-section {
+    display: flex;
+    margin-top: 5vw;
+    margin-left: 10vw;
+  }
+  
+  .who-we-are-img img {
+    margin-right: 10px;
+    display: block;
+  }
+  
+  .who-we-are-section h3,
+  .who-we-are-section p {
+    margin-left: 10vw;
+    margin-top: 1.5vw;
 }
 
-.who-we-are-txt{
+.who-we-are-title{
     font-family: "Saira", sans-serif;
     font-weight: 500;
     font-size: 2vw;
-    bottom: 4vw;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+}
+.who-we-are-desc{
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    margin-right: 10vw;
+    font-size: 1.5vw;
+    padding-bottom: 5px;
+}
+
+.who-we-are-title::before{
+    content: "";
+    position: absolute;
+    width: 6.5%;
+    height: 1px;
+    margin-top: 3vw;
+    margin-left: 2vw;
+    border-bottom: 2px solid #48a6f2cc;
+}
+
+/* .who-we-are-img{
     position: relative;
-    right: 5vw;
+    height: auto;
+    top: 5vw;
+    margin-left: 15vw;
+} */
+
+/* .who-we-are-txt{
+    font-family: "Saira", sans-serif;
+    font-weight: 500;
+    font-size: 2vw;
+    position: relative;
+    margin-left: 50vw;
     text-transform: uppercase;
     padding-bottom: 5px;
 }
 .who-we-are-txt::before{
     content: "";
     position: absolute;
-    width: 50%;
+    width: 12%;
     height: 1px;
     bottom: 0;
     left: 0%;
     border-bottom: 2px solid #48a6f2cc;
 }
-
+.who-we-are-desc{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 1.5vw;
+    position: relative;
+    max-width: 500px;
+    margin-left: 50vw;
+    
+} */
 
 .our-detailing-services{
     font-family: "Poppins", sans-serif;
@@ -314,6 +363,7 @@ h5{
     width: 25%;
     font-family: "Saira", sans-serif;
     font-weight: 500;
+    height: fit-content;
     font-size: 1vw;
     padding: 20px;
     border-radius: 16px;
@@ -540,7 +590,11 @@ p strong {
     padding-bottom: 5px;
 }
 
-.service-name,.time-cost{
+.service-name{
+    text-align: center;
+}
+
+.time-cost{
     text-align: center;
 }
 
@@ -1550,9 +1604,3 @@ background-color: rgba(252, 138, 85, 0.8);
 
 }
 
-
-#map {
-    height: 500px;
-    margin: 100px 100px; /* should be half of the px value in width */
-    width: calc(100% - 200px);
-}

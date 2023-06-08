@@ -204,21 +204,16 @@
                   </svg></button></a>
         </div> 
      
-                
-
-
-               
+              
 
             <script>
             const datePicker = document.getElementById('datePicker');
 
             datePicker.addEventListener('input', function() {
             const selectedDate = new Date(datePicker.value);
-            const currentDate = new Date();
+            
             localStorage.setItem('date', selectedDate);
 
-            
-            
             });
             </script>
 
@@ -227,7 +222,7 @@
             </div>
         </div>
         <script>
-            var selectedTech = ""; // Variable to store the selected value
+            var selectedTech = ""; //stores the selected technician
           
             document.getElementById("dropdown").onchange = function() {
               selectedTech = this.value;

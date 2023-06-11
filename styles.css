@@ -183,7 +183,7 @@ nav ul li a.active{
 
 
 .banner {
-    /* The image used */
+    
     background-image: linear-gradient(to top right, rgba(0, 0, 0, 0.5) 10%, rgba(0,0,0, 0.80 ) 95%),
     url(images/home_title.jpg);
     background-size:cover;
@@ -262,40 +262,6 @@ h5{
     border-bottom: 2px solid #48a6f2cc;
 }
 
-/* .who-we-are-img{
-    position: relative;
-    height: auto;
-    top: 5vw;
-    margin-left: 15vw;
-} */
-
-/* .who-we-are-txt{
-    font-family: "Saira", sans-serif;
-    font-weight: 500;
-    font-size: 2vw;
-    position: relative;
-    margin-left: 50vw;
-    text-transform: uppercase;
-    padding-bottom: 5px;
-}
-.who-we-are-txt::before{
-    content: "";
-    position: absolute;
-    width: 12%;
-    height: 1px;
-    bottom: 0;
-    left: 0%;
-    border-bottom: 2px solid #48a6f2cc;
-}
-.who-we-are-desc{
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    font-size: 1.5vw;
-    position: relative;
-    max-width: 500px;
-    margin-left: 50vw;
-    
-} */
 
 .our-detailing-services{
     font-family: "Poppins", sans-serif;
@@ -385,7 +351,7 @@ h5{
     
 }
 .meet-team {
-    /* The image used */
+ 
     background-image: linear-gradient(to top right, rgba(0, 0, 0, 0.5) 10%, rgba(0,0,0, 0.80 ) 95%),
     url(images/team-banner.jpg);
     background-size:cover;
@@ -409,7 +375,7 @@ h5{
     text-transform: uppercase;
 }
 .services-banner {
-    /* The image used */
+   
     background-image: linear-gradient(to top right, rgba(0, 0, 0, 0.5) 10%, rgba(0,0,0, 0.80 ) 95%),
     url(images/Car-Detailing-Services.jpg);
     background-size:cover;
@@ -424,7 +390,7 @@ h5{
   }
 
   .testimonials-banner {
-    /* The image used */
+  
     background-image: linear-gradient(to top right, rgba(0, 0, 0, 0.5) 10%, rgba(0,0,0, 0.80 ) 95%),
     url(images/testimonials-banner.jpg);
     background-size:cover;
@@ -473,12 +439,11 @@ h5{
     font-size: 1vw;
     padding: 20px;
     border-radius: 16px;
-    /* background-color: #FC8955; */
     background: linear-gradient(50%,50%);
     border-radius: 25px 25px 25px 25px;
-    height: auto; /* Adjust the height as needed */
-    background-color: #FC8955; /* Blue color for the top section */
-    background-image: linear-gradient(to bottom, #FC8955 25%, #d0cfcf 0%); /* Gradient from 20% to bottom with gray color */
+    height: auto; 
+    background-color: #FC8955; 
+    background-image: linear-gradient(to bottom, #FC8955 25%, #d0cfcf 0%); 
     background-repeat: no-repeat;
 
 }
@@ -838,76 +803,6 @@ ul{
    color:#025a8e;
 }
 
-
-
-
-
-/* 
-.member1 {
-    position: absolute;
-    overflow: hidden;
-    left: 0;
-    background-size: cover;
-    background-position: left;
-    margin-top: 10vw;
-    width: 1261px;
-    height: auto;
-    height: 300px; 
-    background-color: #48A6F24F; 
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: space-evenly;
-    align-items: space-evenly;
-    justify-items: center;
-    align-content: center;
-    
-    align-content: space-between;
-  }
-
-  .member1 img {
-    width: 32%;
-    height: auto;
-    object-fit: cover;
-    object-position: left;
-  }
-
-  .member2 {
-    position: absolute;
-    overflow: hidden;
-    right: 1;
-    float: right;
-    margin-top: 35vw;
-    width: 1261px;
-    height: auto;
-    height: 300px;
-    background-color: #48A6F24F;
-  }
-
-  .member2 img {
-    width: 32%;
-    height: auto;
-    object-fit: cover;
-    object-position: right;
-  } */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 footer {
     background-color: #FC8955;
     padding: 20px;
@@ -935,7 +830,7 @@ footer {
 }
 
 .footer-logo {
-    /* Styles for the logo area */
+   
    margin-bottom: 0%;
 }
 
@@ -1159,11 +1054,7 @@ footer {
     align-items: center;
     justify-content: flex-start;
     flex-direction: column;
-
-    
 }
-
-
 
 .step2{
     font-family: "Poppins", sans-serif;
@@ -1201,7 +1092,7 @@ footer {
     
 }
 
-/* Media query for screens with a maximum width of 768px */
+
 @media (max-width: 768px) {
     .step3-wrapper {
         flex-direction: column;
@@ -1426,12 +1317,6 @@ background-color: rgba(252, 138, 85, 0.8);
   }
 
 
-
-
-
-
-
-
   .star-icon {
     margin-right: 5px; 
   }
@@ -1495,11 +1380,6 @@ background-color: rgba(252, 138, 85, 0.8);
       width: 100%;
     }
   }
-
-
-
-
-
 
 
 .card-container {
@@ -1596,7 +1476,7 @@ background-color: rgba(252, 138, 85, 0.8);
         
         top: 5vw;
         right: 5vw;
-        width: 40%; /* Adjust the width as needed */
+        width: 40%; 
         height: 50%;
         background-color: #48a6f2;
         border-radius: 18px;

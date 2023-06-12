@@ -1,4 +1,4 @@
-# SEG3135 Project - Maria Khalil
+# SEG3125 Project - Maria Khalil
 ### UI link: https://mariakhalil999.github.io/Project1/
 
 <!--
